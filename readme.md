@@ -17,7 +17,7 @@ The routine was posted in the May-June issue of the American College of Sports M
 Clone the repo.
 >
 ``` bash
-$ git clone git://github.com/travisrussi/angular-7min-triggerio.git`
+$ git clone git://github.com/travisrussi/angular-7min-triggerio.git
 ```
 
 Install the pre-requisite packages using `npm`.
@@ -35,7 +35,7 @@ $ sudo chown -R $USER /usr/local
 $ sudo chown -R $USER /Users/[yourusername]/.npm
 ```
 
-Tests require `PhantomJS` to be installed.
+Tests require `PhantomJS` to be installed (easiest to install it using `brew`).
 >
 ``` bash
 $ brew update && brew install phantomjs
@@ -53,7 +53,7 @@ You can build the latest version using `grunt`.
 $ grunt build
 ```
 
-AngularStrap is tested with `karma`.
+Run the javascript unit tests with `karma`.
 >
 ``` bash
 $ grunt test
