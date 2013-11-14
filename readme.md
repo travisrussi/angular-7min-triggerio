@@ -42,7 +42,7 @@ $ brew update
 $ brew install phantomjs
 ```
 
-Quick start using `grunt`.
+Quick start using `grunt` that fires up a local webserver at [http://localhost:9000](http://localhost:9000).
 >
 ``` bash
 $ grunt server
