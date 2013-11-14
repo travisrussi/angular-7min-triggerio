@@ -54,7 +54,7 @@ You can build the latest version using `grunt`.
 $ grunt build
 ```
 
-Run the javascript unit tests with `karma`.
+Run the javascript unit tests with `karma` (requires `PhantomJS`).
 >
 ``` bash
 $ grunt test
