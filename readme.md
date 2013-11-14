@@ -4,8 +4,6 @@ This is a clone of [angular-7min](https://github.com/mgcrea/angular-7min) by [@m
 
 # [angular-7min](http://mgcrea.github.com/angular-7min) [![Build Status](https://secure.travis-ci.org/mgcrea/angular-7min.png?branch=master)](http://travis-ci.org/#!/mgcrea/angular-7min)
 
-Todos are boring, aren't they?
-
 Angular-7min is fun & useful mobile application built with [AngularJS](https://github.com/angular) as a week-end project.
 
 >
