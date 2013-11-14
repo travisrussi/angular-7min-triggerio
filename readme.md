@@ -14,26 +14,6 @@ This routine of 12 exercises is a complete workout based on the latest fitness r
 The routine was posted in the May-June issue of the American College of Sports Medicine's Health & Fitness Journal and highlighted by *** [TAKEDOWN - a famous journal from NY](https://github.com/mgcrea/angular-7min/blob/master/takedown/20130506-nytimes.jpg) ***.
 
 
-## Takedown notice
-
-+ I have received the following [takedown notice](https://github.com/mgcrea/angular-7min/blob/master/takedown/20130506-nytimes.jpg) regarding the illustrations used in the app.
-
-
-## Documentation and examples
-
-[![Build Status](http://mgcrea.github.io/angular-7min/images/tour.gif)](http://mgcrea.github.com/angular-7min)
-
-
-+ Check the [documentation](http://mgcrea.github.com/angular-7min) and [changelog](https://github.com/mgcrea/angular-7min/wiki/Changelog).
-
-
-## Todo
-
-+ Write unit&e2e tests
-+ Add a build script for `cordova-ios`
-+ Migrate to `angular-unstable` with `$animate`
-
-
 ## Quick start
 
 >
@@ -44,10 +24,11 @@ $ grunt server
 
 ## Developers
 
-Clone the repo, `git clone git://github.com/mgcrea/angular-7min.git`, [download the latest release](https://github.com/mgcrea/angular-7min/zipball/master) or install with bower `bower install angular-7min`.
+Clone the repo, `git clone git://github.com/travisrussi/angular-7min-triggerio.git`.
 
 AngularStrap is tested with `karma`.
 
+>
 ``` bash
 $ sudo npm install bower grunt-cli --global
 $ npm install --dev; bower install
@@ -55,19 +36,19 @@ $ grunt test
 ```
 
 Tests require 'PhantomJS' to be installed.
-
+>
 ``` bash
 $ brew update && brew install phantomjs
 ```
 
 You can build the latest version using `grunt`.
-
+>
 ``` bash
 $ grunt build
 ```
 
 If you run into any permissions issues running the 'npm install' command on OSX, try running one of these two commands.
-
+>
 ``` bash
 $ sudo chown -R $USER /usr/local
 $ sudo chown -R $USER /Users/[yourusername]/.npm
