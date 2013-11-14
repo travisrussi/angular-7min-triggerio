@@ -38,7 +38,8 @@ $ sudo chown -R $USER /Users/[yourusername]/.npm
 Tests require `PhantomJS` to be installed (easiest to install it using `brew`).
 >
 ``` bash
-$ brew update && brew install phantomjs
+$ brew update
+$ brew install phantomjs
 ```
 
 Quick start using `grunt`.
