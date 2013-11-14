@@ -80,14 +80,20 @@ Please submit all pull requests the against master branch. If your unit test con
 
 ## Authors
 
-**Olivier Louvignes**
+**Olivier Louvignes (angular-7min)**
 
 + http://olouv.com
 + http://github.com/mgcrea
 
+**Travis Russi (angular-7min-triggerio)**
+
++ http://travisdoes.com
++ http://github.com/travisrussi
+
 
 ## Credits
 
++ [angular-7min](https://github.com/mgcrea/angular-7min) by [@mgcrea](https://github.com/mgcrea)
 + [AngularJS mobile-nav](https://github.com/ajoslin/angular-mobile-nav) by [@ajoslin](https://github.com/ajoslin)
 + [Codrops's PageTransitions](https://github.com/codrops/PageTransitions) by [@botelho](https://github.com/botelho)
 
