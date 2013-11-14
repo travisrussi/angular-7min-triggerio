@@ -10,7 +10,7 @@ angular.module('$app')
 
   })
 
-  .controller('MainCtrl', function($scope, $location, $navigate, $routeParams, $countdown, $analytics, audioFiles, workouts, workout) {
+  .controller('MainCtrl', function($scope, $location, $navigate, $routeParams, $countdown, audioFiles, workouts, workout) {
 
     $scope.timer = 3;
     $scope.next = '/step/1';
@@ -27,13 +27,13 @@ angular.module('$app')
         audioFiles.play('start');
         $navigate.go($scope.next, 'glueTopFromBottom'); // cubeToLeft
       }});
-      $analytics.trackEvent('workout', 'start');
+      //$analytics.trackEvent('workout', 'start');
     };
 
     $scope.restart = function() {
       audioFiles.play('skip');
       $navigate.go($scope.next, 'glueTopFromBottom'); // cubeToLeft
-      $analytics.trackEvent('workout', 'restart');
+      //$analytics.trackEvent('workout', 'restart');
     };
 
     $scope.minus = function() {

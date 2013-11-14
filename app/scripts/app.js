@@ -14,7 +14,7 @@ if(false && /(ipad|iphone)/.test(userAgent)) {
   });
 }
 
-angular.module('$app', [/*'ngMobile', */'ajoslin.mobile-navigate', 'cordova.analytics'])
+angular.module('$app', ['ajoslin.mobile-navigate'])
 
   .service('console', function($window) {
     return angular.$debug ? $window.console : {log: function() {}, warn: function() {}, error: function() {}};
@@ -67,12 +67,12 @@ angular.module('$app', [/*'ngMobile', */'ajoslin.mobile-navigate', 'cordova.anal
       });
   })
 
-  .run(function(console, $rootScope, $location, $navigate, $route, $analytics) {
+  .run(function(console, $rootScope, $location, $navigate, $route) {
     $rootScope.$location = $location;
     $rootScope.$navigate = $navigate;
 
-    $analytics.init('UA-1813303-9', 10);
-    $analytics.trackEvent('application', 'start');
+    //$analytics.init('UA-1813303-9', 10);
+    //$analytics.trackEvent('application', 'start');
 
     setTimeout(function() {
       navigator.splashscreen && navigator.splashscreen.hide();

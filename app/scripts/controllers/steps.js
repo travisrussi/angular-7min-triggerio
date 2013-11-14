@@ -2,7 +2,7 @@
 
 angular.module('$app')
 
-  .controller('StepsCtrl', function($scope, $location, $navigate, $routeParams, $countdown, $analytics, audioFiles, workouts, workout) {
+  .controller('StepsCtrl', function($scope, $location, $navigate, $routeParams, $countdown, audioFiles, workouts, workout) {
     $scope.step = $routeParams.step * 1;
     $scope.total = workout.list.length;
     $scope.next = $scope.step < $scope.total ? '/rest/' + $scope.step : '/done';
@@ -37,7 +37,7 @@ angular.module('$app')
       } else {
         $navigate.go($scope.next, 'glueTopFromBottom'); // cubeToLeft
       }
-      $analytics.trackEvent('workout', 'skip');
+      //$analytics.trackEvent('workout', 'skip');
     };
 
   });
