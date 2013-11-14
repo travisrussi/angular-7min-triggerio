@@ -56,8 +56,6 @@ $ grunt build
 AngularStrap is tested with `karma`.
 >
 ``` bash
-$ sudo npm install bower grunt-cli --global
-$ npm install --dev; bower install
 $ grunt test
 ```
 
