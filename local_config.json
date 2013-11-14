@@ -1,0 +1,14 @@
+{
+	"general": {
+		"reload": {}
+	},
+	"ios": {
+		"profiles": {
+			"DEFAULT": {
+				"provisioning_profile": "/Users/travisrussi/Sites/angular-7min-triggerio/Angular_7min_TriggerIO_Demo.mobileprovision"
+			}
+		},
+		"simulatorsdk": "7.0",
+		"simulatorfamily": "iphone"
+	}
+}
