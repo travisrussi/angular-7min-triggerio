@@ -14,31 +14,14 @@ This routine of 12 exercises is a complete workout based on the latest fitness r
 The routine was posted in the May-June issue of the American College of Sports Medicine's Health & Fitness Journal and highlighted by *** [TAKEDOWN - a famous journal from NY](https://github.com/mgcrea/angular-7min/blob/master/takedown/20130506-nytimes.jpg) ***.
 
 
-## Quick start
-
->
-``` bash
-$ grunt server
-```
-
-
 ## Developers
 
 Clone the repo, `git clone git://github.com/travisrussi/angular-7min-triggerio.git`.
 
-AngularStrap is tested with `karma`.
-
+Quick start
 >
 ``` bash
-$ sudo npm install bower grunt-cli --global
-$ npm install --dev; bower install
-$ grunt test
-```
-
-Tests require 'PhantomJS' to be installed.
->
-``` bash
-$ brew update && brew install phantomjs
+$ grunt server
 ```
 
 You can build the latest version using `grunt`.
@@ -52,6 +35,20 @@ If you run into any permissions issues running the 'npm install' command on OSX,
 ``` bash
 $ sudo chown -R $USER /usr/local
 $ sudo chown -R $USER /Users/[yourusername]/.npm
+```
+
+AngularStrap is tested with `karma`.
+>
+``` bash
+$ sudo npm install bower grunt-cli --global
+$ npm install --dev; bower install
+$ grunt test
+```
+
+Tests require 'PhantomJS' to be installed.
+>
+``` bash
+$ brew update && brew install phantomjs
 ```
 
 ## Contributing
