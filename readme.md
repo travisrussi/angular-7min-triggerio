@@ -18,7 +18,7 @@ The routine was posted in the May-June issue of the American College of Sports M
 
 Clone the repo, `git clone git://github.com/travisrussi/angular-7min-triggerio.git`.
 
-Quick start
+Quick start using `grunt`.
 >
 ``` bash
 $ grunt server
