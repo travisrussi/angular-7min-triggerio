@@ -6,9 +6,6 @@
 *.mobileprovision
 node_modules
 app/components
-dist
 src
 development
 release
-cordova
-sources
