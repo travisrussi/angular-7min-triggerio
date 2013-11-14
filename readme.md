@@ -12,9 +12,13 @@ This routine of 12 exercises is a complete workout based on the latest fitness r
 The routine was posted in the May-June issue of the American College of Sports Medicine's Health & Fitness Journal and highlighted by *** [TAKEDOWN - a famous journal from NY](https://github.com/mgcrea/angular-7min/blob/master/takedown/20130506-nytimes.jpg) ***.
 
 
-## Installing Pre-Requisites
+## Getting Started
 
-Clone the repo, `git clone git://github.com/travisrussi/angular-7min-triggerio.git`.
+Clone the repo.
+>
+``` bash
+$ git clone git://github.com/travisrussi/angular-7min-triggerio.git`
+```
 
 Install the pre-requisite packages using `npm`.
 >
@@ -36,8 +40,6 @@ Tests require `PhantomJS` to be installed.
 ``` bash
 $ brew update && brew install phantomjs
 ```
-
-## Getting Started
 
 Quick start using `grunt`.
 >
