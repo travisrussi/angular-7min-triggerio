@@ -1,3 +1,7 @@
+# [angular-7min-triggerio](http://www.github.com/travisrussi/angular-7min-triggerio)
+
+This is a clone of [angular-7min](https://github.com/mgcrea/angular-7min) by [@mgcrea](https://github.com/mgcrea) that's built to run in the [Trigger.IO](http://www.trigger.io) environment.
+
 # [angular-7min](http://mgcrea.github.com/angular-7min) [![Build Status](https://secure.travis-ci.org/mgcrea/angular-7min.png?branch=master)](http://travis-ci.org/#!/mgcrea/angular-7min)
 
 Todos are boring, aren't they?
