@@ -2,16 +2,18 @@
   "name": "7-min-workout",
   "version": "1.0.0",
   "dependencies": {
-    "angular": "~1.0.8",
+    "angular": "~1.2.0",
     "json3": "latest",
     "es5-shim": "latest",
     "ratchet": "git://github.com/maker/ratchet.git#~1.0.1",
-	"bootstrap": "~2.3.2",
-	"angular-mobile-nav": "latest",
-	"fastclick": "~0.6.10"
+    "bootstrap": "~2.3.2",
+    "angular-mobile-nav": "latest",
+    "angular-route": "~1.2.0",
+    "angular-touch": "~1.2.0",
+    "angular-animate": "~1.2.0"
   },
   "devDependencies": {
-    "angular-mocks": "~1.0.8",
-    "angular-scenario": "~1.0.8"
+    "angular-mocks": "~1.2.0",
+    "angular-scenario": "~1.2.0"
   }
 }

@@ -1,10 +1,9 @@
 'use strict';
-/* global FastClick */
 
 angular.$debug = true;
 
 var userAgent = navigator.userAgent.toLowerCase();
-if(false && /(ipad|iphone)/.test(userAgent)) {
+if (false && /(ipad|iphone)/.test(userAgent)) {
   document.addEventListener('deviceready', function() {
     angular.bootstrap(document, ['$app']);
   }, false);
@@ -14,7 +13,7 @@ if(false && /(ipad|iphone)/.test(userAgent)) {
   });
 }
 
-angular.module('$app', ['ajoslin.mobile-navigate'])
+angular.module('$app', ['ajoslin.mobile-navigate', 'ngRoute', 'ngTouch'])
 
   .service('console', function($window) {
     return angular.$debug ? $window.console : {log: function() {}, warn: function() {}, error: function() {}};
@@ -46,25 +45,29 @@ angular.module('$app', ['ajoslin.mobile-navigate'])
 
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/step/:step', {
-        templateUrl: 'views/step.html',
-        controller: 'StepsCtrl'
-      })
-      .when('/rest/:step', {
-        templateUrl: 'views/rest.html',
-        controller: 'RestCtrl'
-      })
-      .when('/done', {
-        templateUrl: 'views/done.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
+    .when('/', {
+      templateUrl: 'views/main.html',
+      controller: 'MainCtrl'
+    })
+    .when('/step/:step', {
+      templateUrl: 'views/step.html',
+      controller: 'StepsCtrl'
+    })
+    .when('/rest/:step', {
+      templateUrl: 'views/rest.html',
+      controller: 'RestCtrl'
+    })
+    .when('/test', {
+      templateUrl: 'views/rest.html',
+      controller: 'TestCtrl'
+    })
+    .when('/done', {
+      templateUrl: 'views/done.html',
+      controller: 'MainCtrl'
+    })
+    .otherwise({
+      redirectTo: '/'
+    });
   })
 
   .run(function(console, $rootScope, $location, $navigate, $route) {
@@ -77,7 +80,6 @@ angular.module('$app', ['ajoslin.mobile-navigate'])
     setTimeout(function() {
       navigator.splashscreen && navigator.splashscreen.hide();
     }, 150);
-
   })
 
   .controller('AppCtrl', function($scope, $location, $navigate, $routeParams, $countdown, audioFiles, workouts, workout) {
@@ -85,10 +87,4 @@ angular.module('$app', ['ajoslin.mobile-navigate'])
     $scope.exit = function() {
       $navigate.go('/', 'slideInFromLeft'); //cubeToLeft
     };
-
   });
-
-// FastClick
-window.addEventListener('load', function() {
-  new FastClick(document.body);
-}, false);
