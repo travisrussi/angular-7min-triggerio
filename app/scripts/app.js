@@ -78,6 +78,14 @@ angular.module('$app', ['ajoslin.mobile-navigate'])
       navigator.splashscreen && navigator.splashscreen.hide();
     }, 150);
 
+  })
+
+  .controller('AppCtrl', function($scope, $location, $navigate, $routeParams, $countdown, audioFiles, workouts, workout) {
+
+    $scope.exit = function() {
+      $navigate.go('/', 'slideInFromLeft'); //cubeToLeft
+    };
+
   });
 
 // FastClick

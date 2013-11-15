@@ -2,14 +2,6 @@
 
 angular.module('$app')
 
-  .controller('AppCtrl', function($scope, $location, $navigate, $routeParams, $countdown, audioFiles, workouts, workout) {
-
-    $scope.exit = function() {
-      $navigate.go('/', 'slideInFromLeft'); //cubeToLeft
-    };
-
-  })
-
   .controller('MainCtrl', function($scope, $location, $navigate, $routeParams, $countdown, audioFiles, workouts, workout) {
 
     $scope.timer = 3;
