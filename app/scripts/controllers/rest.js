@@ -32,3 +32,4 @@ angular.module('$app')
       $navigate.go($scope.next, 'slideInFromRight'); // glueBottomFromTop
     };
   });
+
