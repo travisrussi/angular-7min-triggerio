@@ -2520,6 +2520,26 @@
   transform-origin: 0% 50%;
   animation: rotateCubeLeftIn 0.6s both ease-in;
 }
+.mb-slideInFromRight.mb-out {
+  -webkit-animation: moveToLeft .6s ease both;
+  -moz-animation: moveToLeft .6s ease both;
+  animation: moveToLeft .6s ease both;
+}
+.mb-slideInFromRight.mb-in {
+  -webkit-animation: moveFromRight .6s ease both;
+  -moz-animation: moveFromRight .6s ease both;
+  animation: moveFromRight .6s ease both;
+}
+.mb-slideInFromLeft.mb-out {
+  -webkit-animation: moveToRight .6s ease both;
+  -moz-animation: moveToRight .6s ease both;
+  animation: moveToRight .6s ease both;
+}
+.mb-slideInFromLeft.mb-in {
+  -webkit-animation: moveFromLeft .6s ease both;
+  -moz-animation: moveFromLeft .6s ease both;
+  animation: moveFromLeft .6s ease both;
+}
 /*!
  *  Font Awesome 3.1.0
  *  the iconic font designed for Bootstrap

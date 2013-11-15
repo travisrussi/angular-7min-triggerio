@@ -35,7 +35,7 @@ angular.module('$app')
         $scope.timer = $scope.duration;
         $scope.pause();
       } else {
-        $navigate.go($scope.next, 'glueTopFromBottom'); // cubeToLeft
+        $navigate.go($scope.next, 'slideInFromRight'); // glueTopFromBottom, cubeToLeft
       }
       //$analytics.trackEvent('workout', 'skip');
     };

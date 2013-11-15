@@ -29,7 +29,8 @@ angular.module('$app')
     };
     $scope.skip = function() {
       audioFiles.play('skip');
-      $navigate.go($scope.next, 'glueBottomFromTop');
+      $navigate.go($scope.next, '
+      '); //glueBottomFromTop
     };
 
   });

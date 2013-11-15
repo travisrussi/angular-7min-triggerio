@@ -5,7 +5,7 @@ angular.module('$app')
   .controller('AppCtrl', function($scope, $location, $navigate, $routeParams, $countdown, audioFiles, workouts, workout) {
 
     $scope.exit = function() {
-      $navigate.go('/', 'cubeToLeft');
+      $navigate.go('/', 'slideInFromLeft'); //cubeToLeft
     };
 
   })
@@ -25,14 +25,14 @@ angular.module('$app')
       audioFiles.play('tick');
       $scope.countdown = $countdown({scope: $scope, prop: 'timer', duration: 3, tick: function() { audioFiles.play('tick'); }, callback: function() {
         audioFiles.play('start');
-        $navigate.go($scope.next, 'glueTopFromBottom'); // cubeToLeft
+        $navigate.go($scope.next, 'slideInFromRight'); // glueTopFromBottom, cubeToLeft
       }});
       //$analytics.trackEvent('workout', 'start');
     };
 
     $scope.restart = function() {
       audioFiles.play('skip');
-      $navigate.go($scope.next, 'glueTopFromBottom'); // cubeToLeft
+      $navigate.go($scope.next, 'slideInFromRight'); // glueTopFromBottom, cubeToLeft
       //$analytics.trackEvent('workout', 'restart');
     };
 
